@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.main {
+  width: 100vw;
+  background: #F9F9F9;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+}
+
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+.blue_button{
+  background: #034BE5;
+}
+
+.custom_table td,
+.custom_table th {
+  border-left: 1px solid #D1D1D1;
+  padding: 8px; 
+}
+
+.custom_table th:first-child,
+.custom_table td:first-child {
+  border-left: none; 
+}
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.page-link.selected {
+  background-color: #034BE5;
+  color: white;
+  border: none;
+  border-radius: 50%;
+}
+
+.page-link.selected-blue {
+  background-color: #034BE5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.page-link:hover {
+  background-color: #f2f2f2;
+}
+
+.page-link.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination li {
+  list-style-type: none;
+}
+
+.light_blue_head{
+  background-color:#E9F1FF ;
+}
+
+.divider{
+  border-color: #D1D1D1;
+}
+
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  color: #034BE5;
+  font-family: Madera;
+}
+
+.desc {
+  @apply mt-5 text-lg sm:text-xl max-w-2xl;
+}
+
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.min-card-height {
+    min-height: 230px;
+  }
+
+  .min-card-width {
+    min-width: 180px;
+    justify-content: center;
+    margin-right: 350px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  
+  
+  
+  
+  
+  
